@@ -1,0 +1,51 @@
+body{
+    margin: 20px;
+    padding:auto ;
+    font-family:  Helvetica, sans-serif;
+    color: rgb(15, 15, 15);
+
+}
+
+h1{
+    text-align: left;
+    justify-content: left;
+    padding-left: 900px;
+}
+
+header{
+    padding: 5px;
+    text-align: center;
+}
+
+.text-and-logo{
+    flex-wrap: wrap;
+    text-align:  center;
+    color: rgb(0, 0, 0);
+    justify-content: center;
+}
+
+main{
+    padding: 150px;
+    text-align: center;
+}
+
+li{
+    padding: 22px 5px;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    background: #232942;
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+nav ul li a {
+    display: block;
+    padding: 10px 10px;
+    color: #fff;
+    text-decoration: none;
+}

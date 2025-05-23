@@ -1,0 +1,163 @@
+
+.presentation{
+    display: flex;
+    align-items: center;
+    gap: 150px;
+    flex-wrap: wrap;
+    padding: 40px 20px;
+    background: #ffffff;
+    border-radius: 12px;
+    box-shadow: 0 5 10px rgba(0,0,0,0.5);
+
+}
+
+.photo-container img{
+    width: 350px;
+    height: auto;
+    border-radius: 12px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.2);
+}
+
+.bio{
+    max-width: 600px;
+    flex: 1;
+}
+
+.bio h2{
+    margin-top: 0;
+}
+
+.bio p{
+    line-height: 1.6;
+    font-size: larger;
+}
+
+
+/* Fichier : style.css animé */
+
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    line-height: 1.6;
+    background-color: #f4f4f4;
+    color: #333;
+}
+
+header {
+    background-color: #35424a;
+    color: #ffffff;
+    padding: 20px 0;
+    text-align: center;
+}
+
+
+header h1 {
+    margin: 0;
+    font-size: 2.5em;
+}
+
+header p {
+    margin: 5px 0 0;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    background: #333;
+    display: flex;
+    justify-content: center;
+}
+
+nav ul li {
+    margin: 0;
+}
+
+nav ul li a {
+    display: block;
+    padding: 15px 20px;
+    color: #fff;
+    text-decoration: none;
+
+}
+main {
+    padding: 20px;
+}
+
+section {
+    margin-bottom: 40px;
+    background: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 5px rgba(0,0,0,0.1);
+}
+
+.skills {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+
+.skill {
+    background: #35424a;
+    color: #fff;
+    padding: 10px 15px;
+    border-radius: 20px;
+    font-size: 0.9em;
+}
+
+footer {
+    text-align: center;
+    padding: 15px;
+    background-color: #35424a;
+    color: #ffffff;
+    margin-top: 20px;
+    animation: slideUp 1s ease-out;
+}
+
+.parcours {
+    padding: 40px 20px;
+    text-align: center;
+    background-color: #fdfdfd;
+}
+
+.ecole-card {
+    display: inline-block;
+    width: 300px;
+    margin: 20px;
+    background: #fff;
+    padding: 20px;
+    border-radius: 12px;
+    box-shadow: 0 4px 12px rgba(5, 6, 6, 0.1);
+}
+
+.ecole-card img {
+    width: 300px;
+    height: auto;
+    margin-bottom: 10px;
+}
+
+.ecole-card h3 {
+    margin: 10px 0 5px;
+    font-size: 1.1em;
+    color: #333;
+}
+
+.ecole-card p {
+    font-size: 0.95em;
+    color: #666;
+}
+
+form{
+    border: solid rgb(87, 82, 82);
+    margin-right: 400px;
+    
+}
+
+.inform{
+    margin: 30px;
+}
+
+
+
