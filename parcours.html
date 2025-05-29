@@ -9,7 +9,7 @@
 <body>
     <header>
         <h1>Michel the GOAT</h1>
-        <nav>
+        <nav class="nav-bar">
             <ul>
                 <li><a href="index.html">Accueil</a></li>
                 <li><a href="presentation.html">Présentation</a></li>
@@ -18,7 +18,7 @@
                 <li><a href="contacts.html">Contacts</a></li>
             </ul>
         </nav>
-        
+        <img src="./images/menu-btn.png" alt="Menu" class="menu-hamburger">
     </header>
    <main>
      <section id="parcours">
@@ -54,4 +54,12 @@
     </footer>
 
 </body>
+<script>
+    const menuHamburger = document.querySelector('.menu-hamburger');
+    const navBar = document.querySelector('.nav-bar');
+
+    menuHamburger.addEventListener('click', () => {
+        navBar.classList.toggle('mobile-menu');
+    });
+</script>
 </html>

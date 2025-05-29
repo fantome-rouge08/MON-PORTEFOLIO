@@ -2,7 +2,7 @@ body{
     font-family: Arial, Helvetica, sans-serif;
     margin: 0;
     padding: 0;
-    background:linear-gradient(135deg,#e4e6ef,#e2e2e2);
+    background: linear-gradient(135deg,#fbfbfd,#fbf9f9);
     color: #333;
     min-height: 100vh;
     display: flex;
@@ -27,6 +27,10 @@ header p{
     margin-top: 0;
 }
 
+.nav-bar{
+    margin-left: -120px;
+}
+
 nav ul{
     list-style: none;
     padding: 0;
@@ -40,36 +44,30 @@ nav ul li{
 }
 
 nav ul li a{
+    font-size: 1rem;
     display: block;
     padding: 15px 20px;
     color: white;
     text-decoration: none;
 }
 
-img{
+header img{
     display: none;
-    width: 35px;
     position: absolute;
-    top:40px;
-    right:30px;
+    right: 50px;
+    top: 25px;
+    width: 35px;
 }
 
 
 main{
-    flex:1;
-    display: flex;
     justify-content: center;
     align-items: center;
     text-align: center;
-    padding: 20px;
-}
-
-main{
     font-size: 19px;
     display: inline-block;
-    background: linear-gradient(135deg,#edeef3,#e2e2e2);
+    background:linear-gradient(135deg,#fbfbfd,#fbf9f9);
     padding: 120px;
-    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
 
     
 }
@@ -77,9 +75,100 @@ main{
 /*Style pour le pied de page*/
 
 footer{
-    background: linear-gradient(135deg,#edeef3,#e2e2e2);
+    background: linear-gradient(135deg,#fbfbfd,#fbf9f9);
     color: #000000;
     text-align: center;
     padding: 5px;
+    margin-top: 30px;
+}
+
+
+.nav-bar ul {
+    display: flex;
+    gap: 20px;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.menu-hamburger {
+    display: none;
+    width: 30px;
+    cursor: pointer;
+}
+
+/* Responsive général */
+@media (max-width: 768px) {
+    header {
+        flex-direction: column;
+        gap: 0;
+        align-items: flex-start;
+        padding: 10px 0 0 0;
+    }
+    header h1 {
+        margin-left: 20px;
+        font-size: 1.3em;
+    }
+    .nav-bar {
+        margin-left: 0;
+        width: 100%;
+    }
+    .nav-bar ul {
+        flex-direction: column;
+        position: absolute;
+        top: 60px;
+        left: 0;
+        width: 100%;
+        height: 100vh;
+        background-color:#7b7a7aee;
+        display: none;
+        padding: 20px 0;
+        z-index: 2000;
+    }
+    .nav-bar.mobile-menu ul {
+        display: flex;
+    }
+    .nav-bar ul li {
+        margin: 10px 0;
+        text-align: center;
+    }
+    .nav-bar ul li a {
+        color: #fff;
+        font-size: 1.2em;
+    }
+    .menu-hamburger {
+        display: block;
+        position: absolute;
+        top: 85px;
+        right: 20px;
+        z-index: 2100;
+    }
+    main {
+        padding: 30px 10px;
+        font-size: 1em;
+        width: 100%;
+        box-sizing: border-box;
+        display: block;
+        text-align: center;
+    }
+    h2 {
+        font-size: 1.3em;
+    }
+    p {
+        font-size: 1em;
+        margin: 10px 0;
+    }
+    footer {
+        font-size: 0.9em;
+        padding: 10px 0;
+        margin-top: 20px;
+    }
+}
+
+/* Pour éviter que le menu cache le contenu */
+@media (max-width: 768px) {
+    body {
+        padding-top: 70px;
+    }
 }
 

@@ -5,7 +5,6 @@
     align-items: center;
     gap: 150px;
     padding: 40px 20px;
-    background: #fff;
     border-radius: 12px;
     box-shadow: 0 5 10px rgba(0,0,0,0.5);
     
@@ -41,7 +40,7 @@ body {
     margin: 0;
     padding: 0;
     line-height: 1.6;
-    background-color: linear-gradient(135deg,#edeef3,#e2e2e2);
+    background: linear-gradient(135deg,#fbfbfd,#fbf9f9);
     color: #333;
 }
 
@@ -59,8 +58,9 @@ header h1{
 }
 
 
-header p {
-    margin: 5px 0 0;
+header p{
+    font-size: 1.5em;
+    margin-top: 0;
 }
 
 nav ul {
@@ -76,6 +76,7 @@ nav ul li {
 }
 
 nav ul li a {
+    font-size: 1rem;
     display: block;
     padding: 15px 20px;
     color: #fff;
@@ -83,6 +84,7 @@ nav ul li a {
 
 }
 main {
+    background: linear-gradient(135deg,#fbfbfd,#fbf9f9);
     padding: 20px;
 }
 
@@ -92,7 +94,7 @@ main {
 
 
 section {
-    background:#fff;
+    background:linear-gradient(135deg,#fbfbfd,#fbf9f9);
     margin-bottom: 40px;
     padding: 20px;
     border-radius: 8px;
@@ -126,8 +128,14 @@ footer {
     padding: 15px;
     color: black;
     margin-top: 30px;
+    background: linear-gradient(135deg,#fbfbfd,#fbf9f9);
     
 }
+
+.ft{
+    margin-top: 120px;
+}
+
 
 /* Style pour la page de parcours*/
 
@@ -179,4 +187,134 @@ form{
 }
 
 
+
+@media (max-width: 768px) {
+    header {
+        flex-direction: column;
+        gap: 0;
+        align-items: flex-start;
+        padding: 10px 0 0 0;
+    }
+    header h1 {
+        margin-left: 20px;
+        font-size: 1.3em;
+    }
+    .nav-bar {
+        margin-left: 0;
+        width: 100%;
+    }
+    .nav-bar ul {
+        flex-direction: column;
+        position: absolute;
+        top: 60px;
+        left: 0;
+        width: 100%;
+        height: 100vh;
+        background-color: #7b7a7aee;
+
+        display: none;
+        padding: 20px 0;
+        z-index: 2000;
+    }
+    .nav-bar.mobile-menu ul {
+        display: flex;
+    }
+    .nav-bar ul li {
+        margin: 10px 0;
+        text-align: center;
+    }
+    .nav-bar ul li a {
+        color: #fff;
+        font-size: 1.2em;
+    }
+    .menu-hamburger {
+        width: 35px;
+        display: block;
+        position: absolute;
+        top: 70px;
+        right: 20px;
+        z-index: 1000;
+    }
+    main {
+        padding: 20px 5px;
+        font-size: 1em;
+        width: 100%;
+        box-sizing: border-box;
+        display: block;
+    }
+    section, form, .inform {
+        width: 100%;
+        box-sizing: border-box;
+        padding: 10px;
+        margin: 0;
+    }
+    input, textarea, button {
+        width: 100% !important;
+        max-width: 100%;
+        font-size: 1em;
+        margin-bottom: 10px;
+    }
+    .inform label {
+        font-size: 1em;
+    }
+    footer {
+        font-size: 0.9em;
+        padding: 10px 0;
+    }
+    /* Présentation */
+    .presentation {
+        flex-direction: column;
+        gap: 30px;
+        padding: 20px 5px;
+        align-items: stretch;
+    }
+    .photo-container img {
+        width: 100%;
+        max-width: 250px;
+        margin: 0 auto;
+        display: block;
+    }
+    .bio {
+        max-width: 100%;
+        font-size: 1em;
+    }
+    /* Cartes écoles */
+    .ecole-card {
+        width: 100%;
+        margin: 15px 0;
+        padding: 10px;
+    }
+    .ecole-card img {
+        width: 100%;
+        max-width: 250px;
+        height: auto;
+    }
+    /* Skills */
+    .skills {
+        flex-direction: column;
+        gap: 15px;
+        align-items: stretch;
+    }
+    .skill {
+        font-size: 1em;
+        padding: 10px;
+    }
+    /* Formulaire */
+    form {
+        width: 100%;
+        margin: 0;
+        padding: 10px;
+    }
+    .inform {
+        margin: 0;
+        padding: 0;
+    }
+}
+
+/* Pour éviter que le menu cache le contenu */
+@media (max-width: 768px) {
+    body {
+        padding-top: 50px;
+    }
+}
 
