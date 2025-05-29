@@ -2,7 +2,7 @@ body{
     font-family: Arial, Helvetica, sans-serif;
     margin: 0;
     padding: 0;
-    background:linear-gradient(135deg,#c9d6ff,#e2e2e2);
+    background:linear-gradient(135deg,#e4e6ef,#e2e2e2);
     color: #333;
     min-height: 100vh;
     display: flex;
@@ -10,15 +10,16 @@ body{
 }
 
 header{
-    background: #35424a;
+    display: flex;
+    background: #1e4b66;
     color: white;
-    padding: 20px 0;
-    text-align: center;
+    padding: 0px;
+    align-items: center;
+    gap:300px;
 }
 
 header h1{
-    font-size: 3em;
-    margin-bottom: 10px;
+    margin-left: 50px;
 }
 
 header p{
@@ -29,8 +30,7 @@ header p{
 nav ul{
     list-style: none;
     padding: 0;
-    margin: 0;
-    background: #333;
+    margin-top: 15px;
     display: flex;
     justify-content: center;
 }
@@ -46,6 +46,15 @@ nav ul li a{
     text-decoration: none;
 }
 
+img{
+    display: none;
+    width: 35px;
+    position: absolute;
+    top:40px;
+    right:30px;
+}
+
+
 main{
     flex:1;
     display: flex;
@@ -55,17 +64,22 @@ main{
     padding: 20px;
 }
 
-section{
-    background: linear-gradient(135deg,#c9d6ff,#e2e2e2);
-    padding: 40px;
-    border-radius: 15px;
+main{
+    font-size: 19px;
+    display: inline-block;
+    background: linear-gradient(135deg,#edeef3,#e2e2e2);
+    padding: 120px;
     box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+
     
 }
 
+/*Style pour le pied de page*/
+
 footer{
-    background: #35424a;
-    color: #fff;
+    background: linear-gradient(135deg,#edeef3,#e2e2e2);
+    color: #000000;
     text-align: center;
-    padding: 20px;
+    padding: 5px;
 }
+

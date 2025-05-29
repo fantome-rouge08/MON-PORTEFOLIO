@@ -8,7 +8,10 @@
 </head>
 <body>
     <header>
-        <nav>
+        <h1> Michel the GOAT</h1>
+      
+    
+        <nav class="nav-bar">
             <ul>
                 <li><a href="index.html">Accueil</a></li>
                 <li><a href="presentation.html">Présentation</a></li>
@@ -17,18 +20,25 @@
                 <li><a href="contacts.html">Contacts</a></li>
             </ul>
         </nav>
-        <h1> Michel the GOAT</h1>
+       <img src="./images/menu-logo.jpg" alt="menu-hamurger" class="menu-logo">
     </header>
    <main>
-     <section id="presentation">
         <h2>Bienvenue sur ma page</h2>
         <p>Decouvrez mon parcours , mes compétences et mes moyens de contacts</p>
-     </section>
     </main>
 
     <footer>
-        <p>Michel Kipaka | Tous droit reserves</p>
+        <p> © Michel Kipaka | Tous droit reserves</p>
     </footer>
 
 </body>
+<script>
+    const menuLogo = document.querySelector('.menu-logo');
+    const nav = document.querySelector('.nav-bar');
+
+    menuLogo.addEventListener('click', () => {
+        nav.classList.toggle('mobile-menu');
+    });
+
+</script>
 </html>

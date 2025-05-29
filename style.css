@@ -1,13 +1,14 @@
+/* Style pour la section presentation*/
 
 .presentation{
     display: flex;
     align-items: center;
     gap: 150px;
-    flex-wrap: wrap;
     padding: 40px 20px;
-    background: #ffffff;
+    background: #fff;
     border-radius: 12px;
     box-shadow: 0 5 10px rgba(0,0,0,0.5);
+    
 
 }
 
@@ -33,29 +34,30 @@
 }
 
 
-/* Fichier : style.css animé */
+/* Style pour le body de toutes les pages*/
 
 body {
     font-family: 'Arial', sans-serif;
     margin: 0;
     padding: 0;
     line-height: 1.6;
-    background-color: #f4f4f4;
+    background-color: linear-gradient(135deg,#edeef3,#e2e2e2);
     color: #333;
 }
 
-header {
-    background-color: #35424a;
-    color: #ffffff;
-    padding: 20px 0;
-    text-align: center;
+header{
+    display: flex;
+    background: #1e4b66;
+    color: white;
+    padding: 0px;
+    align-items: center;
+    gap:350px;
 }
 
-
-header h1 {
-    margin: 0;
-    font-size: 2.5em;
+header h1{
+    margin-left: 50px;
 }
+
 
 header p {
     margin: 5px 0 0;
@@ -63,9 +65,8 @@ header p {
 
 nav ul {
     list-style: none;
-    padding: 0;
-    margin: 0;
-    background: #333;
+    padding: 0px;
+    margin-top: 10px;
     display: flex;
     justify-content: center;
 }
@@ -85,18 +86,28 @@ main {
     padding: 20px;
 }
 
+
+
+/* Style pour les sections de toutes les pages*/
+
+
 section {
+    background:#fff;
     margin-bottom: 40px;
-    background: #fff;
     padding: 20px;
     border-radius: 8px;
     box-shadow: 0 0 5px rgba(0,0,0,0.1);
 }
 
+
+/* Style pour la page Competences*/
+
+
 .skills {
     display: flex;
     flex-wrap: wrap;
-    gap: 10px;
+    gap: 50px;
+    padding-bottom: 55px;
 }
 
 .skill {
@@ -107,14 +118,18 @@ section {
     font-size: 0.9em;
 }
 
+
+/* Style pour le bas de la page*/
+
 footer {
     text-align: center;
     padding: 15px;
-    background-color: #35424a;
-    color: #ffffff;
-    margin-top: 20px;
-    animation: slideUp 1s ease-out;
+    color: black;
+    margin-top: 30px;
+    
 }
+
+/* Style pour la page de parcours*/
 
 .parcours {
     padding: 40px 20px;
@@ -149,9 +164,13 @@ footer {
     color: #666;
 }
 
+
+/*Style pour le formulaire*/
+
 form{
     border: solid rgb(87, 82, 82);
-    margin-right: 400px;
+    margin-right: 40px;
+    width: 450px;
     
 }
 
