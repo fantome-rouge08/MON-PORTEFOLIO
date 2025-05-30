@@ -201,7 +201,11 @@ form{
 
 
 
-@media (max-width: 768px) {
+
+/* Style responsive */
+
+
+@media (max-width: 900px) {
     header {
         flex-direction: column;
         gap: 0;
