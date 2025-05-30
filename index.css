@@ -119,14 +119,19 @@ footer{
         top: 60px;
         left: 0;
         width: 100%;
-        height: 100vh;
-        background-color:#7b7a7aee;
-        display: none;
-        padding: 20px 0;
+        max-height: 0;
+        overflow: hidden;
+        background-color: #1e4b66ee;
+        opacity: 0;
+        transition: max-height 0.4s cubic-bezier(.4,0,.2,1), opacity 0.3s;
+        display: flex;
+        padding: 0;
         z-index: 2000;
     }
     .nav-bar.mobile-menu ul {
-        display: flex;
+        max-height: 100vh; /* Laisse toute la hauteur disponible */
+        opacity: 1;
+        padding: 20px 0;
     }
     .nav-bar ul li {
         margin: 10px 0;

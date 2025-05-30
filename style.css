@@ -50,45 +50,58 @@ header{
     color: white;
     padding: 0px;
     align-items: center;
-    gap:350px;
+    gap:300px;
 }
 
 header h1{
     margin-left: 50px;
 }
 
-
 header p{
     font-size: 1.5em;
     margin-top: 0;
 }
 
-nav ul {
+.nav-bar{
+    margin-left: -120px;
+}
+
+nav ul{
     list-style: none;
-    padding: 0px;
-    margin-top: 10px;
+    padding: 0;
+    margin-top: 15px;
     display: flex;
     justify-content: center;
 }
 
-nav ul li {
-    margin: 0;
+nav ul li{
+    margin: 0 10px;
 }
 
-nav ul li a {
+nav ul li a{
     font-size: 1rem;
     display: block;
     padding: 15px 20px;
-    color: #fff;
+    color: white;
     text-decoration: none;
-
 }
+
+header img{
+    display: none;
+    position: absolute;
+    right: 50px;
+    top: 25px;
+    width: 35px;
+}
+
 main {
     background: linear-gradient(135deg,#fbfbfd,#fbf9f9);
     padding: 20px;
 }
 
-
+.nav-bar-skills{
+    padding: 0px;
+}
 
 /* Style pour les sections de toutes les pages*/
 
@@ -209,15 +222,19 @@ form{
         top: 60px;
         left: 0;
         width: 100%;
-        height: 100vh;
-        background-color: #7b7a7aee;
-
-        display: none;
-        padding: 20px 0;
+        max-height: 0;
+        overflow: hidden;
+        background-color: #1e4b66ee;
+        opacity: 0;
+        transition: max-height 0.4s cubic-bezier(.4,0,.2,1), opacity 0.3s;
+        display: flex;
+        padding: 0;
         z-index: 2000;
     }
     .nav-bar.mobile-menu ul {
-        display: flex;
+        max-height: 100vh; /* Laisse toute la hauteur disponible */
+        opacity: 1;
+        padding: 20px 0;
     }
     .nav-bar ul li {
         margin: 10px 0;
