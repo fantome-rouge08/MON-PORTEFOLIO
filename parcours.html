@@ -3,63 +3,79 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Parcours scolaire de Michel Kipaka.">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
-    <title>Michel Kipaka Officiel</title>
+    <title>Parcours | Michel Kipaka</title>
 </head>
 <body>
-    <header>
-        <h1>Michel the GOAT</h1>
-        <nav class="nav-bar">
+    <div class="background-glow" aria-hidden="true"></div>
+    <header class="site-header">
+        <a class="brand" href="index.html">
+            <span class="brand-badge">MK</span>
+            <span>Michel Kipaka</span>
+        </a>
+        <button class="menu-toggle" aria-label="Ouvrir le menu" aria-expanded="false">Menu</button>
+        <nav class="nav-bar" aria-label="Navigation principale">
             <ul>
-                <li><a href="index.html">Accueil</a></li>
-                <li><a href="presentation.html">Présentation</a></li>
-                <li><a href="parcours.html">Parcours</a></li>
-                <li><a href="competences.html">Compétences</a></li>
-                <li><a href="contacts.html">Contacts</a></li>
+                <li><a href="index.html" data-nav="index">Accueil</a></li>
+                <li><a href="presentation.html" data-nav="presentation">Présentation</a></li>
+                <li><a href="parcours.html" data-nav="parcours">Parcours</a></li>
+                <li><a href="competences.html" data-nav="competences">Compétences</a></li>
+                <li><a href="contacts.html" data-nav="contacts">Contact</a></li>
             </ul>
         </nav>
-        <img src="./images/menu-btn.png" alt="Menu" class="menu-hamburger">
     </header>
-   <main>
-     <section id="parcours">
-        <h2>Voici mon parcours scolaire: </h2>
-            <div class="ecole-card">
-                <img src="images/Bosangani.jpeg" alt="">
-                <h3>Maternelle : Lycee Bosangani </h3>
-                <p>2009-2012</p>
-            </div>
 
-            <div class="ecole-card">
-                <img src="images/Boboto.jpeg" alt="">
-                <h3>Primaire : Petit College Boboto </h3>
-                <p>2012-2013</p>
-            </div>
+    <main class="page">
+        <section class="card reveal" style='padding: 20px;'>
+            <p class="eyebrow">Mon évolution</p>
+            <h1>Parcours académique</h1>
+            <p>Chaque étape a renforcé ma discipline, ma curiosité et ma vision professionnelle.</p>
+        </section>
 
-            <div class="ecole-card">
-                <img src="images/Anuarite Desil.jpeg" alt="">
-                <h3>Primaire: Complexe Scolaire Anuarite Desil</h3>
-                <p>2016-2018</p>
-            </div>
-
-            <div class="ecole-card">
-                <img src="images/CNDC.jpeg" alt="">
-                <h3>Secondaire: College Notre Dame Du Congo </h3>
-                <p>2018-2024</p>
-            </div>
-      </section>
+        <section class="timeline reveal">
+            <article class="timeline-item card">
+                <h3>Lycée Bosangani</h3>
+                <p class="timeline-date">2009 - 2012</p>
+                <p>Maternelle : base éducative, socialisation et première structuration académique.</p>
+                <div class="timeline-media">
+                    <img src="images/Bosangani.jpeg" alt="Lycee Bosangani">
+                </div>
+            </article>
+            <article class="timeline-item card">
+                <h3>Petit College Boboto</h3>
+                <p class="timeline-date">2012 - 2013</p>
+                <p>Transition vers le primaire dans un environnement exigeant et formateur.</p>
+                <div class="timeline-media">
+                    <img src="images/Boboto.jpeg" alt="Petit College Boboto">
+                </div>
+            </article>
+            <article class="timeline-item card">
+                <h3>Complexe Scolaire Anuarite Desil</h3>
+                <p class="timeline-date">2016 - 2018</p>
+                <p>Consolidation des fondamentaux et développement d'une rigueur personnelle.</p>
+                <div class="timeline-media">
+                    <img src="images/Anuarite Desil.jpeg" alt="Complexe Scolaire Anuarite Desil">
+                </div>
+            </article>
+            <article class="timeline-item card">
+                <h3>College Notre Dame du Congo</h3>
+                <p class="timeline-date">2018 - 2024</p>
+                <p>Cycle secondaire marqué par l'autonomie, l'ambition et la préparation universitaire.</p>
+                <div class="timeline-media">
+                    <img src="images/CNDC.jpeg" alt="College Notre Dame du Congo">
+                </div>
+            </article>
+        </section>
     </main>
 
-    <footer>
-        <p> © Michel Kipaka | Tous droit reserves</p>
+    <footer class="site-footer">
+        <p>© Michel Kipaka - Tous droits réservés</p>
     </footer>
 
+    <script src="script.js"></script>
 </body>
-<script>
-    const menuHamburger = document.querySelector('.menu-hamburger');
-    const navBar = document.querySelector('.nav-bar');
-
-    menuHamburger.addEventListener('click', () => {
-        navBar.classList.toggle('mobile-menu');
-    });
-</script>
 </html>

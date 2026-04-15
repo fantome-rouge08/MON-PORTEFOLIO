@@ -3,48 +3,59 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Présentation professionnelle de Michel Kipaka.">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
-    <title>Michel Kipaka Officiel</title>
+    <title>Présentation | Michel Kipaka</title>
 </head>
 <body>
-    <header>
-         <h1>Michel the GOAT</h1>
-        <nav class="nav-bar">
+    <div class="background-glow" aria-hidden="true"></div>
+    <header class="site-header">
+        <a class="brand" href="index.html">
+            <span class="brand-badge">MK</span>
+            <span>Michel Kipaka</span>
+        </a>
+        <button class="menu-toggle" aria-label="Ouvrir le menu" aria-expanded="false">Menu</button>
+        <nav class="nav-bar" aria-label="Navigation principale">
             <ul>
-                <li><a href="index.html">Accueil</a></li>
-                <li><a href="presentation.html">Présentation</a></li>
-                <li><a href="parcours.html">Parcours</a></li>
-                <li><a href="competences.html">Compétences</a></li>
-                <li><a href="contacts.html">Contacts</a></li>
+                <li><a href="index.html" data-nav="index">Accueil</a></li>
+                <li><a href="presentation.html" data-nav="presentation">Présentation</a></li>
+                <li><a href="parcours.html" data-nav="parcours">Parcours</a></li>
+                <li><a href="competences.html" data-nav="competences">Compétences</a></li>
+                <li><a href="contacts.html" data-nav="contacts">Contact</a></li>
             </ul>
         </nav>
-        <img src="./images/menu-btn.png" alt="Menu" class="menu-hamburger"> 
     </header>
-   <main>
-     <section class="presentation">
-        <div class="photo-container">
-            <img src="images/Moi.jpg" alt="Mon portrait">
-        </div>
-        <div class="bio">
-            <h2>A propos de moi </h2>
-                <p>Je m'appelle <strong>Kipaka Bakari Michel.</strong>
-            Je suis né à Kinshasa, le 18 janvier 2007. Actuellement étudiant à l'Université Protestante au Congo en L1 LMD de la faculté des Sciences informatiques. J'ai choisi cette filière parce que le monde moderne est dominé par l'informatique, une science en constante évolution. Face à cette constante évolution , il est important pour moi de m'adapter à cette realité pour contribuer activement à ce secteur en pleine croissanace.</p>
-                <p>Intelligent , optimiste et determiné , je suis pret à rélever tous les défis pour atteindre mon objectif qui est : <strong>Devenir ingenieur informaticien</strong></p>
-        </div>
+
+    <main class="page">
+        <section class="card profile reveal">
+            <div class="photo-container">
+                <img src="images/Moi.jpg" alt="Portrait de Michel Kipaka">
+            </div>
+            <div class="bio">
+                <p class="eyebrow">À propos de moi</p>
+                <h1>Kipaka Bakari Michel</h1>
+                <p>
+                    Né à Kinshasa, je suis actuellement étudiant en L2 Sciences Informatiques à
+                    l'Université Protestante au Congo. J'ai choisi cette voie par passion pour
+                    l'innovation et la résolution de problèmes réels.
+                </p>
+                <p>
+                    Je suis déterminé, optimiste et discipliné. Mon objectif est de devenir un
+                    ingénieur informaticien capable de concevoir des solutions utiles, modernes
+                    et performantes.
+                </p>
+                <a class="btn btn-primary" href="parcours.html">Voir mon parcours</a>
+            </div>
         </section>
     </main>
 
-    <footer>
-        <p> © Michel Kipaka | Tous droit reserves</p>
+    <footer class="site-footer">
+        <p>© Michel Kipaka - Tous droits réservés</p>
     </footer>
 
+    <script src="script.js"></script>
 </body>
-<script>
-    const menuHamburger = document.querySelector('.menu-hamburger');
-    const navBar = document.querySelector('.nav-bar');
-
-    menuHamburger.addEventListener('click', () => {
-        navBar.classList.toggle('mobile-menu');
-    });
-</script>
 </html>

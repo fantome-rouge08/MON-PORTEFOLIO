@@ -3,39 +3,68 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="index.css">
-    <title>Michel Kipaka Officiel</title>
+    <meta name="description" content="Portfolio professionnel de Michel Kipaka - étudiant en informatique et futur ingénieur logiciel.">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <title>Michel Kipaka | Portfolio</title>
 </head>
 <body>
-    <header>
-        <h1> Michel the GOAT</h1>
-        <nav class="nav-bar">
+    <div class="background-glow" aria-hidden="true"></div>
+    <header class="site-header">
+        <a class="brand" href="index.html">
+            <span class="brand-badge">MK</span>
+            <span>Michel Kipaka</span>
+        </a>
+
+        <button class="menu-toggle" aria-label="Ouvrir le menu" aria-expanded="false">Menu</button>
+
+        <nav class="nav-bar" aria-label="Navigation principale">
             <ul>
-                <li><a href="index.html">Accueil</a></li>
-                <li><a href="presentation.html">Présentation</a></li>
-                <li><a href="parcours.html">Parcours</a></li>
-                <li><a href="competences.html">Compétences</a></li>
-                <li><a href="contacts.html">Contacts</a></li>
+                <li><a href="index.html" data-nav="index">Accueil</a></li>
+                <li><a href="presentation.html" data-nav="presentation">Présentation</a></li>
+                <li><a href="parcours.html" data-nav="parcours">Parcours</a></li>
+                <li><a href="competences.html" data-nav="competences">Compétences</a></li>
+                <li><a href="contacts.html" data-nav="contacts">Contact</a></li>
             </ul>
         </nav>
-         <img src="./images/menu-btn.png" alt="" class="menu-hamburger">
     </header>
-   <main>
-        <h2>Bienvenue sur ma page</h2>
-        <p>Decouvrez mon parcours , mes compétences et mes moyens de contacts</p>
+
+    <main class="page page-home">
+        <section class="hero card reveal">
+            <p class="eyebrow">Portfolio Professionnel</p>
+            <h1>Je construis mon avenir d'ingénieur informatique.</h1>
+            <p>
+                Bienvenue sur mon espace professionnel. Découvrez mon parcours, mes compétences
+                techniques et mes objectifs dans le monde du numérique.
+            </p>
+            <div class="hero-actions">
+                <a class="btn btn-primary" href="presentation.html">Voir mon profil</a>
+                <a class="btn btn-ghost" href="contacts.html">Me contacter</a>
+            </div>
+        </section>
+
+        <section class="stats-grid reveal">
+            <article class="card stat">
+                <h3>01</h3>
+                <p>Étudiant motivé, concentré sur une progression continue.</p>
+            </article>
+            <article class="card stat">
+                <h3>03+</h3>
+                <p>Domaines développés : web, mobile et bases de l'algorithmique.</p>
+            </article>
+            <article class="card stat">
+                <h3>2026</h3>
+                <p>Vision claire : devenir un ingénieur solide et impactant.</p>
+            </article>
+        </section>
     </main>
 
-    <footer>
-        <p> © Michel Kipaka | Tous droit reserves</p>
+    <footer class="site-footer">
+        <p>© Michel Kipaka - Tous droits réservés</p>
     </footer>
 
+    <script src="script.js"></script>
 </body>
-<script>
-    const menuHamburger = document.querySelector('.menu-hamburger');
-    const navBar = document.querySelector('.nav-bar');
-
-    menuHamburger.addEventListener('click', () => {
-        navBar.classList.toggle('mobile-menu');
-    });
-</script>
 </html>
